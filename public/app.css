@@ -1,0 +1,11 @@
+/* body {
+    background: #061ed5; 
+    background: -webkit-linear-gradient(to top, #43c5f5, #062cc5);  
+    background: linear-gradient(to top, #43c5f5, #062cc5); 
+    font-size: 1.6rem;
+} */
+
+body{
+    background-color: rgb(90, 83, 73);
+    background: linear-gradient(to top, rgb(90, 83, 73),rgb(58, 50, 57));
+}
