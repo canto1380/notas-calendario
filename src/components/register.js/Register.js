@@ -7,10 +7,9 @@ import Swal from 'sweetalert2'
 import MsjError from '../mensajes/MsjError'
 
 const Register = (props) => {
-    const { user } = props;
 
     /* State */
-    const [valUser, setValUser] = useState(false) // Bandera de datos
+    // const [valUser, setValUser] = useState(false) // Bandera de datos
     const [err, setErr] = useState(false); // Bandera error coincidencia
     const [err1, setErr1] = useState(false); // Bandera falta datos
     const [claves, setClaves] = useState({
@@ -30,26 +29,7 @@ const Register = (props) => {
     let mensaje;
 
     /* Validaciones */
-    const validacionUser = () => {
-        console.log(claves.contrasena)
-        console.log(claves.contrasena1)
-        if (claves.contrasena !== claves.contrasena1) {
-            setErr(true);
-            setTimeout(() => {
-                setErr(false);
-            }, 2500);
-        } else{
-            usuario.contrasena = claves.contrasena
-            if (usuario.nombre === '' || usuario.apellido === '' || usuario.email === '' || usuario.telefono === '' || usuario.contrasena === '') {
-                setErr1(true);
-                setTimeout(() => {
-                    setErr1(false);
-                }, 2500);
-            } else {
-                setValUser(true)
-            }
-        }
-    }
+   
 
 /* onChange */
 const handleValores = (e) => {

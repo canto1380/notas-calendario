@@ -33,6 +33,7 @@ function App() {
           .then(req => {
             setNotas(req.data);
             setConsultarNotas(false)
+            console.log(notas)
           })
           .catch(err => {
             console.log(err)
