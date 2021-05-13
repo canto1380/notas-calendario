@@ -27,8 +27,8 @@ function App() {
   const [IDUser, setIDUser] = useState('')
 
   useEffect(() => {
-    if (consultarNotas) {
-      const consultarAPI = () => {
+    const consultarAPI = () => {
+        if (consultarNotas) {
         clienteAxios.get('notas/listNota')
           .then(req => {
             setNotas(req.data);
@@ -39,8 +39,8 @@ function App() {
             console.log(err)
           })
       }
-      consultarAPI();
     }
+      consultarAPI();
   }, [consultarNotas])
 
   useEffect(() => {
